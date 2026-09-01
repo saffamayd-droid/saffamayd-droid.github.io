@@ -1,0 +1,90 @@
+.navbar
+{
+    background-color: rgb(153, 215, 236);
+    padding: 16px 40px;
+}
+.navbar .logo
+{
+    color:black;
+    margin-right: 40px;
+}
+.navbar a
+{
+    color: black;
+    margin-right: 20px;
+}
+.navbar a:hover
+{
+   outline: 2px solid pink;
+}
+.hero
+{
+    background-color: rgb(153, 215, 236);
+    background-image: url(images/supyy.jpeg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 60px 20px;
+    text-align: center;
+}
+.hero .foto-profil
+{
+    width: 150px;
+    height: 150px;
+    border: 4px solid rgb(153, 215, 236);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+.hero .btn 
+{
+background-color: rgb(153, 215, 236);
+    color: black;
+    padding: 12px 28px;
+    margin-top: 16px;
+    border-radius: 6px;
+}
+#tentang 
+{
+padding: 40px 60px;
+margin: 0;
+border-bottom: 1px solid rgb(153, 215, 236);
+}
+.skill {
+padding: 40px 60px;
+background-color: pink;
+}
+.skill .badge {
+background-color: rgb(153, 215, 236);
+color: black;
+padding: 8px 16px;
+margin: 6px;
+border: 1px solid #1F3864;
+border-radius: 20px;
+box-sizing: border-box;
+}
+.card-proyek 
+{
+border: 1px solid gray;
+border-radius: 8px;
+padding: 20px;
+margin-bottom: 24px;
+box-sizing: border-box;
+}
+.card-proyek img 
+{
+width: 45%;
+height: auto;
+border-radius: 6px;
+}
+footer {
+background-color: rgb(153, 215, 236);
+color: black;
+text-align: center;
+padding: 16px;
+}
+.hero, .skill {
+text-align: center;
+}
