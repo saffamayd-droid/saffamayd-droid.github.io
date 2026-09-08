@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f1ea;
+            color: #333;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        nav {
+            background-color: rgb(131, 205, 251);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            height: 65px;
+        }
+
+        .logo {
+            color: black;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 23px 18px;
+            transition: 0.3s;
+        }
+
+        /* Hover navbar */
+        .menu li a:hover {
+            background-color: pink;
+            color: black;
+        }
+
+        /* ================= DROPDOWN ================= */
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 65px;
+            left: 0;
+            background-color: pink;
+            list-style: none;
+            min-width: 160px;
+            z-index: 10;
+        }
+
+        .dropdown-menu li {
+            width: 100%;
+        }
+
+        .dropdown-menu li a {
+            padding: 15px;
+        }
+
+        /* Dropdown muncul saat hover */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* ================= JUDUL ================= */
+
+        .judul {
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        .judul h1 {
+            font-size: 36px;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .judul p {
+            color: #777;
+        }
+
+        /* ================= GALLERY ================= */
+
+        .gallery {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px 30px 60px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .foto {
+            width: 280px;
+            background-color: rgb(131, 205, 251);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: 0.3s;
+        }
+
+        /* Hover pada gambar/gallery */
+        .foto:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .foto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .foto:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Caption */
+        .caption {
+            text-align: left;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 0 15px;
+            }
+
+            .menu li a {
+                padding: 23px 8px;
+                font-size: 14px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+
+        <!-- Logo / Nama -->
+        <div class="logo">
+            Saffa May Dinna
+        </div>
+
+        <!-- Menu -->
+        <ul class="menu">
+
+            <li>
+                <a href="#">Home</a>
+            </li>
+
+            <li>
+                <a href="#">About</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="dropdown">
+                <a href="#">Gallery ▾</a>
+
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">Nature</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Animals</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Travel</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- JUDUL -->
+    <div class="judul">
+        <h1>Galeri Foto</h1>
+        <p>Foto-foto favorit saya</p>
+    </div>
+
+
+    <!-- IMAGE GALLERY -->
+    <div class="gallery">
+
+        <!-- Foto 1 -->
+        <div class="foto">
+            <img src="images/Ohyul(1).jpeg" alt="Ohyul Hirono">
+            <div class="caption">
+                Ohyul Hirono
+            </div>
+        </div>
+
+        <!-- Foto 2 -->
+        <div class="foto">
+            <img src="images/Ohyul(2).jpeg" alt="Ohyul MMA">
+            <div class="caption">
+                Ohyul MMA
+            </div>
+        </div>
+
+        <!-- Foto 3 -->
+        <div class="foto">
+            <img src="images/Ohyul(3).jpeg" alt="Ohyul Bandana">
+            <div class="caption">
+                Ohyul Bandana
+            </div>
+        </div>
+
+        <!-- Foto 4 -->
+        <div class="foto">
+            <img src="images/Ohyul(4).jpeg" alt="USA YUL">
+            <div class="caption">
+                USA YUL
+            </div>
+        </div>
+
+        <!-- Foto 5 -->
+        <div class="foto">
+            <img src="images/Ohyul(5).jpeg" alt="Beach YUL">
+            <div class="caption">
+                Beach YUL
+            </div>
+        </div>
+
+        <!-- Foto 6 -->
+        <div class="foto">
+            <img src="images/Ohyul (6).jpeg" alt="Night YUL">
+            <div class="caption">
+                Night YUL
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
